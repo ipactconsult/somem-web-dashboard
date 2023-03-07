@@ -1,0 +1,36 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+
+   
+  </div>
+  <div class="row">
+      <div class="col-sm-4 col-lg-4 justify-content-start">
+        <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
+          <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
+        </nb-select>
+      </div>
+  </div>
+ 
+</div>
+
+<div style="height:54px ; width:250px; background-color: #ccc; border-radius: 15px;opacity: 0.8;"  class="row">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <img src="../../../../assets/images/logo-somem.png" width="150px" alt="">
+    </div>
+</div>
+
+<div class="header-container">
+  <nb-actions size="small">
+
+    <nb-action class="user-action" *nbIsGranted="['view', 'user']" >
+      <nb-user [nbContextMenu]="userMenu"
+               [onlyPicture]="userPictureOnly"
+               [name]="user?.name"
+               [picture]="user?.picture">
+      </nb-user>
+    </nb-action>
+  </nb-actions>
+</div>

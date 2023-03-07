@@ -1,0 +1,272 @@
+<div class="container">
+  <nb-card>
+    <nb-card-body class="row">
+      <div class="col-lg-4 col-md-3 col-sm-12">
+        <h5 class="pt-2 title-reponsive">Liste des techniciens</h5>
+      </div>
+      <div class="col-6"></div>
+      <div class="col-md-2 col-sm-12 d-flex justify-content-end">
+        <a
+          href="/somem-dashboard/gestion-ressources-humaines/technicien/create"
+          class="input-responsive"
+          nbButton
+          style="
+            background-color: #008000;
+            border: 1px solid #008000;
+            color: white;
+          "
+          >Créer</a
+        >
+      </div>
+    </nb-card-body>
+  </nb-card>
+  <div class="row"></div>
+  <div class="row mt-3">
+    <div class="d-flex justify-content-start col-lg-12 col-md-12 col-sm-12">
+      <p class="mt-2">Rechercher par :  &nbsp;</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Nom</label>
+            </div>
+            <div class="col-12">
+              <input fullWidth fieldSize="large" type="text" nbInput />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Prénom</label>
+            </div>
+            <div class="col-12">
+              <input fullWidth fieldSize="large" type="text" nbInput />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Matricule</label>
+            </div>
+            <div class="col-12">
+              <input fullWidth fieldSize="large" type="text" nbInput />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Adresse Email</label>
+            </div>
+            <div class="col-12">
+              <input fullWidth fieldSize="large" type="text" nbInput />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Statut</label>
+            </div>
+            <div class="col-12">
+              <input fullWidth fieldSize="large" type="text" nbInput />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Date de création</label>
+            </div>
+            <div class="col-12">
+              <input fullWidth fieldSize="large" type="date" nbInput />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Coût horaire</label>
+            </div>
+            <div class="col-12">
+              <input fullWidth type="text" nbInput fieldSize="large"/>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Agence</label>
+            </div>
+            <div class="col-12">
+              <nb-select
+                size="large"
+                fullWidth
+                placeholder="Filtrer par agence"
+              >
+                <nb-option value="Tous les agences"> Tous les agences </nb-option>
+                <nb-option value="Agence 0">Agence 0</nb-option>
+                <nb-option value="Agence 1">Agence 1</nb-option>
+                <nb-option value="Agence 2">Agence 2</nb-option>
+                <nb-option value="Agence 3">Agence 3</nb-option>
+                <nb-option value="Agence 4">Agence 4</nb-option>
+              </nb-select>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Niveau de compétence</label>
+            </div>
+            <div class="col-12">
+              <nb-select
+                size="large"
+                fullWidth
+                placeholder="Filtrer par compétence"
+              >
+                <nb-option value="Compétence 0">Compétence 0</nb-option>
+                <nb-option value="Compétence 1">Compétence 1</nb-option>
+                <nb-option value="Compétence 2">Compétence 2</nb-option>
+                <nb-option value="Compétence 3">Compétence 3</nb-option>
+                <nb-option value="Compétence 4">Compétence 4</nb-option>
+              </nb-select>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start col-lg-3 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Spécialité</label>
+            </div>
+            <div class="col-12">
+              <nb-select
+                size="large"
+                fullWidth
+                placeholder="Filtrer par spécialité"
+              >
+                <nb-option value="Spécialité 0">Spécialité 0</nb-option>
+                <nb-option value="Spécialité 1">Spécialité 1</nb-option>
+                <nb-option value="Spécialité 2">Spécialité 2</nb-option>
+                <nb-option value="Spécialité 3">Spécialité 3</nb-option>
+                <nb-option value="Spécialité 4">Spécialité 4</nb-option>
+               
+              </nb-select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nb-card class="mt-4">
+    <nb-card-body>
+      <div class="row">
+        <div class="d-flex col-lg-12 col-md-12 col-sm-12 justify-content-end">
+          <p class="pt-2">1-50 sur 1752</p>
+          <nb-icon icon="chevron-left-outline" class="mx-4 mt-2"></nb-icon>
+          <nb-icon class="mt-2" icon="chevron-right-outline"></nb-icon>
+        </div>
+      </div>
+    </nb-card-body>
+    <nb-card-body>
+      <table class="rwd-table">
+        <tbody>
+          <tr>
+            <th></th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th class="">Email</th>
+            <th class="">Créé le</th>
+            <th>Statut</th>
+            <th>Agence</th>
+            <th>Niveau de compétence</th>
+            <th>Spécialité</th>
+            <th class="">Coût horaire</th>
+          </tr>
+          <tr style="height: 80px">
+            <td data-th="Nom">
+              <nb-checkbox status="basic"></nb-checkbox>
+            </td>
+            <td data-th="Nom">Nom</td>
+            <td data-th="Prénom">Prénom</td>
+            <td class="hideCol" data-th="Email">Email</td>
+            <td class="hideCol" data-th="Date de création">26/02/2022</td>
+            <td data-th="Statut">Statut</td>
+            <td data-th="Agence">Agence</td>
+            <td data-th="Niveau de compétence">Niveau de compétence</td>
+            <td data-th="Spécialité">Spécialité</td>
+            <td class="hideCol" data-th="Coût horaire">3</td>
+          </tr>
+
+          <tr style="height: 80px">
+            <td data-th="Nom">
+              <nb-checkbox status="basic"></nb-checkbox>
+            </td>
+            <td data-th="Nom">Nom</td>
+            <td data-th="Prénom">Prénom</td>
+            <td class="hideCol" data-th="Email">Email</td>
+            <td class="hideCol" data-th="Date de création">26/02/2022</td>
+            <td data-th="Statut">Statut</td>
+            <td data-th="Agence">Agence 1</td>
+            <td data-th="Niveau de compétence">Senior</td>
+            <td data-th="Spécialité">Spécialité 3</td>
+            <td class="hideCol" data-th="Coût horaire">3</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row mt-3">
+        <div class="d-flex justify-content-end col-12">
+          <button
+            style="
+              background-color: #008000;
+              border: 1px solid transparent;
+              color: white;
+            "
+            nbButton
+            class="mx-2"
+          >
+            Envoyer une invitation
+          </button>
+          <button
+            style="
+              background-color: #008000;
+              border: 1px solid transparent;
+              color: white;
+            "
+            nbButton
+            class="mx-2"
+          >
+            Activer
+          </button>
+          <a
+            href="/somem-dashboard/gestion-ressources-humaines/technicien/edit"
+            style="
+              background-color: #008000;
+              border: 1px solid transparent;
+              color: white;
+            "
+            nbButton
+            class="mx-2"
+            >Modifier</a
+          >
+          <button
+            style="
+              background-color: #008000;
+              border: 1px solid transparent;
+              color: white;
+            "
+            nbButton
+            class="mx-2"
+          >
+            Afficher
+          </button>
+        </div>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</div>

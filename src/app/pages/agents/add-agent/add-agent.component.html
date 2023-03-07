@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="row"></div>
+  <nb-card>
+    <nb-card-body class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <h5 class="pt-2 title-reponsive">Créer un agent</h5>
+      </div>
+    </nb-card-body>
+  </nb-card>
+
+  <nb-card class="mt-4">
+    <nb-card-body>
+      <form>
+        <div class="row">
+          <div class="col-1">
+            <label class="pt-2" for="">Nom</label>
+          </div>
+          <div class="col-5">
+            <input fullWidth type="text" nbInput fieldSize="large" />
+          </div>
+
+          <div class="col-1">
+            <label class="pt-2" for="">Prénom</label>
+          </div>
+
+          <div class="col-5">
+            <input fullWidth type="text" nbInput fieldSize="large" />
+          </div>
+
+          <div class="col-1 mt-3">
+            <label class="pt-2" for="">Matricule</label>
+          </div>
+          <div class="col-5 mt-3">
+            <input fullWidth type="text" nbInput fieldSize="large" />
+          </div>
+
+          <div class="col-1 mt-3">
+            <label class="pt-2" for="">Email address</label>
+          </div>
+          <div class="col-5 mt-3">
+            <input fullWidth type="email" nbInput fieldSize="large" />
+          </div>
+          <div class="col-1 mt-2">
+            <label for="">Statut</label>
+          </div>
+          <div class="col-5 mt-2">
+            <input fullWidth type="text" nbInput fieldSize="large" />
+          </div>
+
+          <div class="col-1 mt-2">
+            <label for="">Date de création</label>
+          </div>
+          <div class="col-5 mt-2">
+            <input fullWidth type="date" nbInput fieldSize="large" />
+          </div>
+        </div>
+      </form>
+    </nb-card-body>
+  </nb-card>
+  <nb-card>
+    <nb-card-body>
+      <div class="col-12 d-flex justify-content-end align-content-end">
+        <button
+          style="text-transform: none"
+          status="basic"
+          nbButton
+        >
+          Créer sans envoyer une invitation
+        </button>
+        <button
+          class="mx-2"
+          style="
+            background-color: #008000;
+            border: 1px solid transparent;
+            color: white;
+            text-transform: none;
+          "
+          nbButton
+        >
+          Valider
+        </button>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</div>

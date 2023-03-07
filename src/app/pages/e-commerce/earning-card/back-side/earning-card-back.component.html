@@ -1,0 +1,16 @@
+<nb-card-header>
+  Commandes
+</nb-card-header>
+<nb-card-body>
+  <div class="chart-info">
+    <div [style.color]="color">Achevée</div>
+    <div class="text-warning">En cours</div>
+    <div class="text-primary">Refusée</div>
+    <div class="time-period caption">Cette semaine:</div>
+    <div class="h6">{{ value }}%</div>
+  </div>
+  <ngx-earning-pie-chart style="margin-top: -10px;" [values]="earningPieChartData"
+                         (selectPie)="changeChartInfo($event)"
+                         [defaultSelectedCurrency]="defaultSelectedCurrency">
+  </ngx-earning-pie-chart>
+</nb-card-body>

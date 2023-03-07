@@ -1,0 +1,116 @@
+<div class="container">
+  <div class="row"></div>
+  <nb-card>
+    <nb-card-body class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <h5 class="pt-2 title-reponsive">Liste des agents</h5>
+      </div>
+      <div class="col-7"></div>
+      <div class="col-md-2 col-sm-12 d-flex justify-content-end">
+        <a href="/somem-dashboard/gestion-ressources-humaines/agent/create" class="input-responsive" nbButton style="background-color: #008000; border: 1px solid #008000; color:white">Créer</a>
+      </div>
+    </nb-card-body>
+  </nb-card>
+  <div class="row mt-3">
+    <div class="col-md-2 col-sm-12"><p class="mt-2">Rechercher : &nbsp;</p></div>
+    <div class="col-lg-3 col-md-3 col-sm-12 input-responsive">
+      <input fieldSize="medium" nbInput placeholder="" fullWidth />
+    </div>
+
+  </div>
+
+  <nb-card class="mt-4">
+    <nb-card-body>
+      <div class="row">
+        <div class="d-flex col-lg-12 col-md-12 col-sm-12 justify-content-end">
+          <p class="pt-2">1-50 sur 1752</p>
+          <nb-icon icon="chevron-left-outline" class="mx-4 mt-2"></nb-icon>
+          <nb-icon class="mt-2" icon="chevron-right-outline"></nb-icon>
+        </div>
+      </div>
+    </nb-card-body>
+    <nb-card-body>
+      <table class="rwd-table">
+        <tbody>
+          <tr>
+            <th></th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Email</th>
+            <th>Date de création</th>
+            <th>Statut</th>
+          </tr>
+          <tr style="height: 80px">
+            <td data-th="Nom">
+              <nb-checkbox status="basic"></nb-checkbox>
+            </td>
+            <td data-th="Nom">Nom</td>
+            <td data-th="Prénom">Prénom</td>
+            <td data-th="Email">Email</td>
+            <td data-th="Date de création">26/02/2022</td>
+            <td data-th="Statut">Statut</td>
+          </tr>
+
+          <tr style="height: 80px">
+            <td data-th="Nom">
+              <nb-checkbox status="basic"></nb-checkbox>
+            </td>
+            <td data-th="Nom">Nom</td>
+            <td data-th="Prénom">Prénom</td>
+            <td data-th="Email">Email</td>
+            <td data-th="Date de création">26/02/2022</td>
+            <td data-th="Statut">Statut</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row mt-3">
+        <div class="d-flex justify-content-end col-12">
+          <button
+            style="
+              background-color: #008000;
+              border: 1px solid transparent;
+              color: white;
+            "
+            nbButton
+            class="mx-2"
+          >
+            Envoyer une invitation
+          </button>
+          <button
+            style="
+              background-color: #008000;
+              border: 1px solid transparent;
+              color: white;
+            "
+            nbButton
+            class="mx-2"
+          >
+            Activer
+          </button>
+          <button
+            style="
+              background-color: #008000;
+              border: 1px solid transparent;
+              color: white;
+            "
+            nbButton
+            class="mx-2"
+          >
+            Modifier
+          </button>
+          <button
+            style="
+              background-color: #008000;
+              border: 1px solid transparent;
+              color: white;
+            "
+            nbButton
+            class="mx-2"
+          >
+            Afficher
+          </button>
+        </div>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</div>
